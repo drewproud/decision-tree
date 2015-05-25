@@ -1,13 +1,13 @@
 # decision-tree
 Meteor decision tree package
 
-Often times, the need arises to handle logic in the form of a decision tree. This package is intended to offer a declarative way of following a binary decision tree to the endpoint and returning a defined value, instead of a messy nested structure of if-then statements.
+Often times, the need arises to handle logic in the form of a decision tree. This package is intended to offer a declarative way of following a binary decision tree to an endpoint and returning a defined value instead of using a messy nested structure of if-then statements.
 
 Installation:
 `meteor add drewproud:decision-tree`
 
 
-To use:
+To use:    
 1. Instantiate a new DecisionTree object with your desired options    
 2. Set all functions used in the tree with setFunctions    
 3. Set the tree to be used using setTree    
