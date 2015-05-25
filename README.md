@@ -70,7 +70,7 @@ NextMoveForGuy.setTree({
   func: 'isHungry',
   isTrue: {
     func: 'hasMoney',
-    isTrue: 'BOUGHT_FOOD'
+    isTrue: 'BOUGHT_FOOD',
     isFalse: 'STOLE_FOOD'
   },
   isFalse: 'WATCHED_TV'
