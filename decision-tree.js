@@ -26,6 +26,7 @@ DecisionTree.prototype.setTree = function(rules) {
 
 // Add all functions that are referenced in the tree
 DecisionTree.prototype.setFunctions = function(functionObject) {
+  var self = this;
   if (typeof functionObject !== 'object')
     throw 'You must pass an object of functions to';
 
