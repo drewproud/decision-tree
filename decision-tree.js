@@ -5,7 +5,7 @@
 DecisionTree = function(logLevel, idField) {
   var self = this;
 
-  if (!(logLevel && typeof logLevel === 'number'))
+  if (logLevel !== undefined && logLevel !== null typeof logLevel !== 'number')
     throw 'If passed, logLevel must be an integer (0 or 1)';
 
   self.options = {
@@ -74,7 +74,7 @@ DecisionTree.prototype._followTree  = function(currentNode, attributes, path) {
   // If there is no function to call, we are at an endpoint and should return the text string
   } else {
     if (self.options.logLevel > 0)
-      console.log('success ' + attributes[self.idField] + ' ' + path + ' result:' + currentNode);
+      console.log('success ' + attributes[self.options.idField] + ' ' + path + ' result:' + currentNode);
 
     return currentNode;
   }
