@@ -8,10 +8,10 @@ Installation:
 
 
 To use:
-1. Instantiate a new DecisionTree object with your desired options
-2. Set all functions used in the tree with setFunctions
-3. Set the tree to be used using setTree
-4. Call run to execute and return the approriate endpoint value
+1. Instantiate a new DecisionTree object with your desired options    
+2. Set all functions used in the tree with setFunctions    
+3. Set the tree to be used using setTree    
+4. Call run to execute and return the approriate endpoint value    
 
 ## API
 
