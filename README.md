@@ -1,5 +1,5 @@
-# decision-tree
-Meteor decision tree package
+# Meteor Decision Tree    
+A Meteor package for using decision-tree style logic in your app    
 
 Often times, the need arises to handle logic in the form of a decision tree. This package is intended to offer a declarative way of following a binary decision tree to an endpoint and returning a defined value instead of using a messy nested structure of if-then statements.
 
