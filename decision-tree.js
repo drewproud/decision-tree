@@ -5,7 +5,7 @@
 DecisionTree = function(logLevel, idField) {
   var self = this;
 
-  if (logLevel !== undefined && logLevel !== null typeof logLevel !== 'number')
+  if (logLevel !== undefined && logLevel !== null && typeof logLevel !== 'number')
     throw 'If passed, logLevel must be an integer (0 or 1)';
 
   self.options = {
