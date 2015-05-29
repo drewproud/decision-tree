@@ -1,5 +1,5 @@
-# Meteor Decision Tree    
-A Meteor package for using decision-tree style logic in your app    
+# Meteor Decision Tree
+A Meteor package for using decision-tree style logic in your app
 
 Often times, the need arises to handle logic in the form of a decision tree. This package is intended to offer a declarative way of following a binary decision tree to an endpoint and returning a defined value instead of using a messy nested structure of if-then statements.
 
@@ -7,11 +7,11 @@ Installation:
 `meteor add drewproud:decision-tree`
 
 
-To use:    
-1. Instantiate a new DecisionTree object with your desired options    
-2. Set all functions used in the tree with setFunctions    
-3. Set the tree to be used using setTree    
-4. Call run to execute and return the approriate endpoint value    
+To use:
+1. Instantiate a new DecisionTree object with your desired options
+2. Set all functions used in the tree with setFunctions
+3. Set the tree to be used using setTree
+4. Call run to execute and return the approriate endpoint value
 
 ## API
 
@@ -64,7 +64,7 @@ This is the object to be tested. It will be the only argument passed to each dec
 Here is how to use it. You can see another example in action at the nonprofit meteor project [UCB](https://github.com/drenfr01/unionCapital).
 
 ````
-NextMoveForGuy = new DecisionTree(1);
+NextMoveForGuy = new DecisionTree();
 
 NextMoveForGuy.setTree({
   func: 'isHungry',
@@ -93,6 +93,8 @@ var someGuy = {
   money: 0
 };
 
-var doThis = NextMoveForGuy(someGuy);
+var doThis = NextMoveForGuy.run(someGuy);
+console.log(doThis);
+// 'STOLE_FOOD'
 
 ````
