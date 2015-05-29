@@ -64,7 +64,7 @@ This is the object to be tested. It will be the only argument passed to each dec
 Here is how to use it. You can see another example in action at the nonprofit meteor project [UCB](https://github.com/drenfr01/unionCapital).
 
 ````
-NextMoveForGuy = new DecisionTree(1);
+NextMoveForGuy = new DecisionTree();
 
 NextMoveForGuy.setTree({
   func: 'isHungry',
@@ -93,7 +93,8 @@ var someGuy = {
   money: 0
 };
 
-var doThis = NextMoveForGuy(someGuy);
+var doThis = NextMoveForGuy.run(someGuy);
+console.log(doThis);
 // 'STOLE_FOOD'
 
 ````
